@@ -3,7 +3,7 @@
 	. = ..()
 
 // skill level verb
-GAME_VERB_DESC(/mob/living, view_skills, "View Skills", "View your current skills.", "IC")
+GAME_VERB_DESC(/mob/living, view_skills, "View Skills", "IC")
     if(!mind)
         to_chat(src, span_warning("You don't have a mind to view skills for."))
         return
